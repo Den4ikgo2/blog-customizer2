@@ -59,7 +59,8 @@ export const Select = (props: SelectProps) => {
 				className={styles.selectWrapper}
 				ref={rootRef}
 				data-is-active={isOpen}
-				data-testid='selectWrapper'>
+				data-testid='selectWrapper'
+				>
 				<img
 					src={arrowDown}
 					alt='иконка стрелочки'

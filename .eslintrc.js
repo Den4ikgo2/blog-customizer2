@@ -27,6 +27,7 @@ module.exports = {
 		'plugin:eslint-comments/recommended',
 	],
 	rules: {
+		"prettier/prettier": ["error", { "endOfLine": "auto" }],
 		semi: [2, 'always'],
 		quotes: [2, 'single', { avoidEscape: true }],
 		'no-unused-vars': 'off',
@@ -38,5 +39,8 @@ module.exports = {
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'react-hooks/exhaustive-deps': 'off',
 		'import/no-named-as-default': 'off',
+		"prettier/prettier": ["error", { "endOfLine": "auto" }],
+		"editor.codeActionsOnSave": { "source.fixAll": true },
+  		"editor.formatOnSave": false,
 	},
 };
