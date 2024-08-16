@@ -17,8 +17,8 @@ const App = () => {
 	const [currentArticleState, setCurrentArticleState] = useState<ArticleStateType>(defaultArticleState)
 
 	return (
-		<div
-			className={clsx(styles.main)}
+		<main
+			className={styles.main}
 			style={
 				{
 					'--font-family': currentArticleState.fontFamilyOption.value,
@@ -30,7 +30,7 @@ const App = () => {
 			}>
 			<ArticleParamsForm stateForm={setCurrentArticleState}/>
 			<Article />
-		</div>
+		</main>
 	);
 };
 
